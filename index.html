@@ -5,203 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leonard Abraham | Cinematographer</title>
   <meta name="description" content="Leonard Abraham is a cinematographer." />
-  <style>
-    :root {
-      --bg: #ffffff;
-      --panel: #ffffff;
-      --text: #101010;
-      --muted: rgba(16, 16, 16, 0.58);
-      --soft: rgba(16, 16, 16, 0.36);
-      --line: rgba(16, 16, 16, 0.16);
-      --max: 1420px;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 1.4;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    a:hover { color: var(--muted); }
-
-    .site {
-      width: 100%;
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 28px 34px 44px;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 28px;
-      padding-bottom: 72px;
-    }
-
-    .identity {
-      display: grid;
-      gap: 10px;
-    }
-
-    .name {
-      font-size: clamp(1.65rem, 3vw, 3.2rem);
-      line-height: 0.92;
-      letter-spacing: -0.06em;
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-
-    .title {
-      color: var(--muted);
-      font-size: 0.75rem;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 16px;
-      color: var(--muted);
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .nav a { white-space: nowrap; }
-
-    .section-label {
-      color: var(--muted);
-      font-size: 0.75rem;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    .work-section {
-      padding: 34px 0 10px;
-      border-top: 1px solid var(--line);
-    }
-
-    .section-heading {
-      margin-bottom: 22px;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px 24px;
-      align-items: start;
-    }
-
-    .project {
-      min-width: 0;
-    }
-
-    .video {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      background: transparent;
-      border: 0;
-    }
-
-    .video iframe {
-      position: absolute;
-      inset: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-      border: 0;
-      margin: 0;
-      padding: 0;
-    }
-
-    .project-meta {
-      padding: 11px 0 2px;
-      font-size: 0.76rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .project-title { color: var(--text); }
-
-    .contact {
-      display: grid;
-      grid-template-columns: minmax(160px, 0.38fr) minmax(0, 1.62fr);
-      gap: 34px;
-      padding-top: 34px;
-      margin-top: 34px;
-      border-top: 1px solid var(--line);
-    }
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding-top: 52px;
-      color: var(--soft);
-      font-size: 0.72rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    @media (max-width: 900px) {
-      .site { padding: 22px 18px 34px; }
-
-      .header,
-      .contact {
-        grid-template-columns: 1fr;
-      }
-
-      .header {
-        display: grid;
-        padding-bottom: 42px;
-      }
-
-      .nav {
-        justify-content: flex-start;
-      }
-
-      .project-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 620px) {
-      .nav { gap: 11px; }
-
-      .footer {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="site">
@@ -223,41 +27,33 @@
         </div>
 
         <div class="project-grid">
-          <article class="project" id="film-01">
-            <div class="video">
-              <iframe src="https://player.vimeo.com/video/589858641?title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Film 01"></iframe>
+          <a class="project-card" href="film-01.html" id="film-01">
+            <div class="video preview">
+              <iframe src="https://player.vimeo.com/video/589858641?title=0&amp;byline=0&amp;portrait=0" loading="lazy" title="Film 01"></iframe>
             </div>
-            <div class="project-meta">
-              <a class="project-title" href="https://vimeo.com/589858641" target="_blank" rel="noreferrer">Film 01</a>
-            </div>
-          </article>
+            <div class="project-meta"><span class="project-title">Film 01</span></div>
+          </a>
 
-          <article class="project" id="film-02">
-            <div class="video">
-              <iframe src="https://player.vimeo.com/video/491686569?title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Film 02"></iframe>
+          <a class="project-card" href="film-02.html" id="film-02">
+            <div class="video preview">
+              <iframe src="https://player.vimeo.com/video/491686569?title=0&amp;byline=0&amp;portrait=0" loading="lazy" title="Film 02"></iframe>
             </div>
-            <div class="project-meta">
-              <a class="project-title" href="https://vimeo.com/491686569" target="_blank" rel="noreferrer">Film 02</a>
-            </div>
-          </article>
+            <div class="project-meta"><span class="project-title">Film 02</span></div>
+          </a>
 
-          <article class="project" id="film-03">
-            <div class="video">
-              <iframe src="https://player.vimeo.com/video/589855929?title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Film 03"></iframe>
+          <a class="project-card" href="film-03.html" id="film-03">
+            <div class="video preview">
+              <iframe src="https://player.vimeo.com/video/589855929?title=0&amp;byline=0&amp;portrait=0" loading="lazy" title="Film 03"></iframe>
             </div>
-            <div class="project-meta">
-              <a class="project-title" href="https://vimeo.com/589855929" target="_blank" rel="noreferrer">Film 03</a>
-            </div>
-          </article>
+            <div class="project-meta"><span class="project-title">Film 03</span></div>
+          </a>
 
-          <article class="project" id="film-04">
-            <div class="video">
-              <iframe src="https://player.vimeo.com/video/589932128?title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Film 04"></iframe>
+          <a class="project-card" href="film-04.html" id="film-04">
+            <div class="video preview">
+              <iframe src="https://player.vimeo.com/video/589932128?title=0&amp;byline=0&amp;portrait=0" loading="lazy" title="Film 04"></iframe>
             </div>
-            <div class="project-meta">
-              <a class="project-title" href="https://vimeo.com/589932128" target="_blank" rel="noreferrer">Film 04</a>
-            </div>
-          </article>
+            <div class="project-meta"><span class="project-title">Film 04</span></div>
+          </a>
         </div>
       </section>
 
@@ -265,7 +61,7 @@
         <div class="section-label">Contact</div>
         <div class="contact-links">
           <a href="mailto:info@leonardabrahamdp.com">info@leonardabrahamdp.com</a>
-          <a href="https://www.instagram.com/leonard_abraham/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.instagram.com/leonard_abraham/">Instagram</a>
           <span>Los Angeles</span>
         </div>
       </section>
