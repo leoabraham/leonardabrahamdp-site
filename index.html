@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leonard Abraham | Cinematographer</title>
-  <meta name="description" content="Leonard Abraham is a Los Angeles-based cinematographer and director." />
+  <meta name="description" content="Leonard Abraham is a cinematographer." />
   <style>
     :root {
-      --bg: #050505;
-      --panel: #0b0b0b;
-      --text: #f1eee8;
-      --muted: rgba(241, 238, 232, 0.62);
-      --soft: rgba(241, 238, 232, 0.36);
-      --line: rgba(241, 238, 232, 0.16);
+      --bg: #ffffff;
+      --panel: #f6f5f2;
+      --text: #101010;
+      --muted: rgba(16, 16, 16, 0.58);
+      --soft: rgba(16, 16, 16, 0.36);
+      --line: rgba(16, 16, 16, 0.16);
       --max: 1420px;
     }
 
@@ -50,7 +50,12 @@
       justify-content: space-between;
       align-items: flex-start;
       gap: 28px;
-      padding-bottom: 52px;
+      padding-bottom: 72px;
+    }
+
+    .identity {
+      display: grid;
+      gap: 10px;
     }
 
     .name {
@@ -59,6 +64,13 @@
       letter-spacing: -0.06em;
       text-transform: uppercase;
       font-weight: 500;
+    }
+
+    .title {
+      color: var(--muted);
+      font-size: 0.75rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
     }
 
     .nav {
@@ -75,14 +87,6 @@
 
     .nav a { white-space: nowrap; }
 
-    .intro {
-      display: grid;
-      grid-template-columns: minmax(160px, 0.38fr) minmax(0, 1.62fr);
-      gap: 34px;
-      padding: 0 0 34px;
-      border-bottom: 1px solid var(--line);
-    }
-
     .section-label {
       color: var(--muted);
       font-size: 0.75rem;
@@ -90,17 +94,9 @@
       text-transform: uppercase;
     }
 
-    .intro-text {
-      max-width: 920px;
-      margin: 0;
-      font-size: clamp(1.4rem, 3vw, 3.2rem);
-      line-height: 1.02;
-      letter-spacing: -0.055em;
-      font-weight: 400;
-    }
-
     .work-section {
       padding: 34px 0 10px;
+      border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
 
@@ -111,10 +107,8 @@
       margin-bottom: 22px;
     }
 
-    .section-note {
-      margin: 0;
-      color: var(--muted);
-      max-width: 720px;
+    .work-heading {
+      display: block;
     }
 
     .project-grid {
@@ -131,8 +125,8 @@
       position: relative;
       width: 100%;
       overflow: hidden;
-      background: #101010;
-      border: 1px solid rgba(241, 238, 232, 0.12);
+      background: var(--panel);
+      border: 1px solid rgba(16, 16, 16, 0.12);
     }
 
     .video::before {
@@ -225,7 +219,6 @@
       .site { padding: 22px 18px 34px; }
 
       .header,
-      .intro,
       .section-heading,
       .contact {
         grid-template-columns: 1fr;
@@ -261,7 +254,10 @@
 <body>
   <div class="site">
     <header class="header" id="top">
-      <a class="name" href="#top">Leonard<br />Abraham</a>
+      <div class="identity">
+        <a class="name" href="#top">Leonard<br />Abraham</a>
+        <div class="title">Cinematographer</div>
+      </div>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#selected-work">Selected Work</a>
         <a href="#commercial">Commercial</a>
@@ -272,15 +268,9 @@
     </header>
 
     <main>
-      <section class="intro" aria-label="Intro">
-        <div class="section-label">Director / DP</div>
-        <p class="intro-text">Los Angeles-based cinematographer and director working across narrative, music, commercial, and image-led character pieces.</p>
-      </section>
-
       <section class="work-section" id="selected-work">
-        <div class="section-heading">
+        <div class="section-heading work-heading">
           <div class="section-label">Selected Work</div>
-          <p class="section-note">A first edit of moving-image work. Project names and credits can be refined as the site becomes more complete.</p>
         </div>
 
         <div class="project-grid">
@@ -290,7 +280,7 @@
             </div>
             <div class="project-meta">
               <a class="project-title" href="https://vimeo.com/589858641" target="_blank" rel="noreferrer">Film 01</a>
-              <div class="project-type">Director / DP</div>
+              <div class="project-type">Cinematographer</div>
             </div>
           </article>
 
@@ -366,7 +356,7 @@
 
     <footer class="footer">
       <span>© Leonard Abraham</span>
-      <span>Director / Cinematographer</span>
+      <span>Cinematographer</span>
     </footer>
   </div>
 </body>
