@@ -78,7 +78,7 @@
       flex-wrap: wrap;
       justify-content: flex-end;
       gap: 16px;
-      max-width: 620px;
+      max-width: 680px;
       color: var(--muted);
       font-size: 0.75rem;
       letter-spacing: 0.12em;
@@ -144,9 +144,6 @@
     }
 
     .project-meta {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
       padding: 11px 0 2px;
       font-size: 0.76rem;
       letter-spacing: 0.12em;
@@ -154,12 +151,6 @@
     }
 
     .project-title { color: var(--text); }
-
-    .project-type {
-      color: var(--soft);
-      text-align: right;
-      white-space: nowrap;
-    }
 
     .list-section {
       padding: 34px 0;
@@ -241,13 +232,10 @@
     @media (max-width: 620px) {
       .nav { gap: 11px; }
 
-      .project-meta,
       .footer {
         flex-direction: column;
         align-items: flex-start;
       }
-
-      .project-type { text-align: left; }
     }
   </style>
 </head>
@@ -260,6 +248,7 @@
       </div>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#selected-work">Selected Work</a>
+        <a href="#fashion">Fashion</a>
         <a href="#commercial">Commercial</a>
         <a href="#music-video">Music Video</a>
         <a href="#narrative">Narrative</a>
@@ -280,7 +269,6 @@
             </div>
             <div class="project-meta">
               <a class="project-title" href="https://vimeo.com/589858641" target="_blank" rel="noreferrer">Film 01</a>
-              <div class="project-type">Cinematographer</div>
             </div>
           </article>
 
@@ -290,7 +278,6 @@
             </div>
             <div class="project-meta">
               <a class="project-title" href="https://vimeo.com/589858096" target="_blank" rel="noreferrer">Film 02</a>
-              <div class="project-type">Commercial</div>
             </div>
           </article>
 
@@ -300,7 +287,6 @@
             </div>
             <div class="project-meta">
               <a class="project-title" href="https://vimeo.com/589855929" target="_blank" rel="noreferrer">Film 03</a>
-              <div class="project-type">Music Video</div>
             </div>
           </article>
 
@@ -310,9 +296,20 @@
             </div>
             <div class="project-meta">
               <a class="project-title" href="https://vimeo.com/589932128" target="_blank" rel="noreferrer">Film 04</a>
-              <div class="project-type">Narrative</div>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="list-section" id="fashion">
+        <div class="section-heading">
+          <div class="section-label">Fashion</div>
+          <ul class="title-list">
+            <li><a href="#film-01">Film 01</a></li>
+            <li><a href="#film-02">Film 02</a></li>
+            <li><a href="#film-03">Film 03</a></li>
+            <li><a href="#film-04">Film 04</a></li>
+          </ul>
         </div>
       </section>
 
